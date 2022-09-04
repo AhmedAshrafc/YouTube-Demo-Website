@@ -1,0 +1,369 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube-Demo</title>
+    <link rel="stylesheet" href="youtube-style.css">
+    <link rel="stylesheet" href="youtube-style-header.css">
+    <link rel="stylesheet" href="youtube-style-general.css">
+    <link rel="stylesheet" href="youtube-style-sidebar.css">
+  </head>
+  <body>
+
+    <!-- (Semantic element) hedaer, nav, main, section, and div are all THE SAME. The only difference that header and nav 
+      (have meaning to screen readers and search engines). They give a special meaning and structure! -->
+
+    <header class="header">
+      <div class="left-section">
+        <img src="icons/hamburger-menu.svg" class="hamburger-menu"/>
+        <img src="icons/youtube-logo.svg" class="youtube-logo"/>
+      </div>
+      <div class="middle-section">
+        <input type="text" placeholder="Search" class="search-bar"/>
+        <button class="search-btn"><img src="icons/search.svg" class="search-icon"/>
+          <div class="tooltip">Search</div>
+        </button>
+        <!-- Put position absolute inside position relative (tooltips) -->
+        <button class="voice-search-btn"><img src="icons/voice-search-icon.svg" class="voice-search-icon"/>
+          <div class="tooltip">Search with your voice</div>
+        </button>
+        <!-- ----- -->
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img src="icons/upload.svg" class="upload-icon"/>
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="youtube-apps-icon-container">
+          <img src="icons/youtube-apps.svg" class="youtube-apps-icon"/>
+          <div class="tooltip">YouTube Apps</div>
+        </div>
+        
+        <!-- We wrapped this specific image inside a div (container) to be able to use position -->
+        <div class="notifications-icon-container">
+          <img src="icons/notifications.svg" class="notifications-icon"/>
+          <div class="tooltip">Notifications</div>
+          <div class="notifications-count">
+            3
+          </div>
+        </div>
+        <div class="channel-profile-container">
+          <img src="icons/my-channel.jpeg" class="current-user-picture"/>
+          <div class="tooltip">Profile</div>
+        </div>
+      </div>
+    </header>
+    
+    <!-- You can change this later to a semantic tag such as <nav> -->
+
+    <div class="sidebar">
+      <div class="sidebar-link">
+        <img src="icons/home.svg"/>
+        <div>
+          Home
+        </div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg"/>
+        <div>
+          Explore
+        </div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg"/>
+        <div>
+          Subscriptions
+        </div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg"/>
+        <div>
+          Originals
+        </div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg"/>
+        <div>
+          Youtube Music
+        </div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg"/>
+        <div>
+          Library
+        </div>
+      </div>
+    </div>
+
+    <!-- You can change this later to a semantic tag such as <main> and <section> -->
+    <div class="main-video-grid">
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/shelf.png" />
+          <div class="video-time">
+            14:20
+          </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img src="thumbnails/shelf.png" class="profile-pic"/>
+
+            <!-- Channel picture tooltip when you hover on it (make sure they are RIGHT under the image)-->
+            <div class="youtube-channel-tooltip">
+              <div class="brownlee-picture">
+                  <img src="thumbnails/shelf.png" class="youtube-channel-picture"/>
+              </div>
+              <div class="channel-subs">
+                  <p class="channel-name">Marques Brownlee</p>
+                  <p class="subscribers-count">15M Subscribers</p>
+              </div>
+          </div>
+          <!-- Channel picture tooltip when you hover on it (make sure they are RIGHT under the image)-->
+
+          </div>
+          <div class="video-info">
+            <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+          <p class="video-author">Marques Brownlee</p>
+          <p class="video-stats">3.4M views &#183 6 months ago</p>
+          </div>  
+        </div> 
+      </div>
+  
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/shelf.png" />
+          <div class="video-time">
+            8:22
+          </div>
+        </div>
+        <div class="video-info-grid">
+          <!-- For horizontal layout turn these divs to inline-block. For vertical layout leave them as it is. -->
+          <div class="channel-picture">
+            <img src="thumbnails/shelf.png" class="profile-pic"/>
+
+            <!-- Channel picture tooltip when you hover on it (make sure they are RIGHT under the image)-->
+            <div class="youtube-channel-tooltip">
+              <div class="brownlee-picture">
+                  <img src="thumbnails/shelf.png" class="youtube-channel-picture"/>
+              </div>
+              <div class="channel-subs">
+                  <p class="channel-name">Markiplier</p>
+                  <p class="subscribers-count">21M Subscribers</p>
+              </div>
+          </div>
+           <!-- Channel picture tooltip when you hover on it -->
+          </div>
+          <div class="video-info">
+            <p class="video-title">Try Not To Laugh Challenge #9</p>
+            <p class="video-author">Markiplier</p>
+            <p class="video-stats">19M views · 4 years ago</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/shelf.png" />
+          <div class="video-time">
+            9:13
+          </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img src="thumbnails/shelf.png" class="profile-pic"/>
+          </div>
+          <div class="video-info">
+            <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+          <p class="video-author">Marques Brownlee</p>
+          <p class="video-stats">3.4M views &#183 6 months ago</p>
+          </div>  
+        </div> 
+      </div>
+  
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/shelf.png" />
+          <div class="video-time">
+            22:09
+          </div>
+        </div>
+        <div class="video-info-grid">
+          <!-- For horizontal layout turn these divs to inline-block. For vertical layout leave them as it is. -->
+          <div class="channel-picture">
+            <img src="thumbnails/shelf.png" class="profile-pic"/>
+          </div>
+          <div class="video-info">
+            <p class="video-title">Try Not To Laugh Challenge #9</p>
+            <p class="video-author">Markiplier</p>
+            <p class="video-stats">19M views · 4 years ago</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/shelf.png" />
+          <div class="video-time">
+            11:17
+          </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img src="thumbnails/shelf.png" class="profile-pic"/>
+          </div>
+          <div class="video-info">
+            <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+          <p class="video-author">Marques Brownlee</p>
+          <p class="video-stats">3.4M views &#183 6 months ago</p>
+          </div>  
+        </div> 
+      </div>
+  
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/shelf.png" />
+          <div class="video-time">
+            19:59
+          </div>
+        </div>
+        <div class="video-info-grid">
+          <!-- For horizontal layout turn these divs to inline-block. For vertical layout leave them as it is. -->
+          <div class="channel-picture">
+            <img src="thumbnails/shelf.png" class="profile-pic"/>
+          </div>
+          <div class="video-info">
+            <p class="video-title">Try Not To Laugh Challenge #9</p>
+            <p class="video-author">Markiplier</p>
+            <p class="video-stats">19M views · 4 years ago</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/shelf.png" />
+          <div class="video-time">
+            10:13
+          </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img src="thumbnails/shelf.png" class="profile-pic"/>
+          </div>
+          <div class="video-info">
+            <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+          <p class="video-author">Marques Brownlee</p>
+          <p class="video-stats">3.4M views &#183 6 months ago</p>
+          </div>  
+        </div> 
+      </div>
+  
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/shelf.png" />
+          <div class="video-time">
+            7:12
+          </div>
+        </div>
+        <div class="video-info-grid">
+          <!-- For horizontal layout turn these divs to inline-block. For vertical layout leave them as it is. -->
+          <div class="channel-picture">
+            <img src="thumbnails/shelf.png" class="profile-pic"/>
+          </div>
+          <div class="video-info">
+            <p class="video-title">Try Not To Laugh Challenge #9</p>
+            <p class="video-author">Markiplier</p>
+            <p class="video-stats">19M views · 4 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/shelf.png" />
+          <div class="video-time">
+            7:12
+          </div>
+        </div>
+        <div class="video-info-grid">
+          <!-- For horizontal layout turn these divs to inline-block. For vertical layout leave them as it is. -->
+          <div class="channel-picture">
+            <img src="thumbnails/shelf.png" class="profile-pic"/>
+          </div>
+          <div class="video-info">
+            <p class="video-title">Try Not To Laugh Challenge #9</p>
+            <p class="video-author">Markiplier</p>
+            <p class="video-stats">19M views · 4 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/shelf.png" />
+          <div class="video-time">
+            7:12
+          </div>
+        </div>
+        <div class="video-info-grid">
+          <!-- For horizontal layout turn these divs to inline-block. For vertical layout leave them as it is. -->
+          <div class="channel-picture">
+            <img src="thumbnails/shelf.png" class="profile-pic"/>
+          </div>
+          <div class="video-info">
+            <p class="video-title">Try Not To Laugh Challenge #9</p>
+            <p class="video-author">Markiplier</p>
+            <p class="video-stats">19M views · 4 years ago</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/shelf.png" />
+          <div class="video-time">
+            7:12
+          </div>
+        </div>
+        <div class="video-info-grid">
+          <!-- For horizontal layout turn these divs to inline-block. For vertical layout leave them as it is. -->
+          <div class="channel-picture">
+            <img src="thumbnails/shelf.png" class="profile-pic"/>
+          </div>
+          <div class="video-info">
+            <p class="video-title">Try Not To Laugh Challenge #9</p>
+            <p class="video-author">Markiplier</p>
+            <p class="video-stats">19M views · 4 years ago</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/shelf.png" />
+          <div class="video-time">
+            7:12
+          </div>
+        </div>
+        <div class="video-info-grid">
+          <!-- For horizontal layout turn these divs to inline-block. For vertical layout leave them as it is. -->
+          <div class="channel-picture">
+            <img src="thumbnails/shelf.png" class="profile-pic"/>
+          </div>
+          <div class="video-info">
+            <p class="video-title">Try Not To Laugh Challenge #9</p>
+            <p class="video-author">Markiplier</p>
+            <p class="video-stats">19M views · 4 years ago</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, distinctio? A, quasi? Reiciendis sit, cupiditate vel error a voluptatem recusandae. Eius neque rerum eaque. Porro quibusdam officia odit accusantium id eius commodi quam tempore, ab recusandae maiores illum maxime asperiores? Quibusdam quo est corporis nesciunt eligendi consequuntur inventore ab! Ipsum vero officia saepe sunt magni. Dicta vel dolorum voluptatibus omnis maiores enim expedita sunt eveniet, neque illum repellendus praesentium sit velit distinctio quaerat consequuntur odio a placeat quia aperiam consequatur ratione culpa nulla. Mollitia cum itaque numquam quos, dicta sunt tempora dignissimos explicabo nihil quae illum corrupti repellendus! Laudantium, inventore.
+  </body>
+</html>
