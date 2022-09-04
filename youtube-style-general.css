@@ -1,0 +1,15 @@
+body {
+  /* This style below will be inherited */
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: rgb(248, 248, 248);
+  /* Padding-top and padding-left are used to be able to use position fixed on the header otherwise the header will cover the content behind it. */
+  padding-top: 80px;
+  padding-left: 95px;
+  padding-right: 24px;
+}
+p {
+  font-family: Arial;
+  margin-top: 0;
+  margin-bottom: 0;
+}
