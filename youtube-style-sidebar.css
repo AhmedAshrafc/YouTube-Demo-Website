@@ -19,12 +19,6 @@
   }
 }
 
-@media only screen and (min-width: 375px) and (max-width: 767px) {
-  .sidebar {
-    width: 50px;
-  }
-}
-
 .sidebar-link {
   margin-bottom: 2px;
   height: 74px;
